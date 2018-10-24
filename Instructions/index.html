@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>WeatherPy</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+
+    <div class="container-fluid">
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+            
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="index.html">Latitude</a>
+                </div>
+                                
+                <ul class="nav navbar-nav navbar-right new-style1">
+                    <li class="navbar">  
+                        <div class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots <span class="caret"></span></a>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li>
+                                        <a href="maxtemp.html"target="_blank" >Max Temperature</a>
+                                    </li>
+                                    <li>
+                                        <a href="humidity.html"target="_blank">Humidity Map</a>
+                                    </li>
+                                    <li>
+                                        <a href="cloudiness.html"target="_blank">Cloudiness</a>
+                                    </li>
+                                    <li>
+                                        <a href="windspeed.html"target="_blank">Wind Speed</a>
+                                    </li>
+                                </ul>
+                        </div>
+                    </li>
+                    <li class="navbar"><a href="comparisons.html"target="_blank">Comparisons</a></li>
+                    <li class="navbar"><a href="data.html"target="_blank">Data</a></li>
+                </ul>
+            </div>
+        </nav>
+    
+    
+        <div class="content">
+            <div class="row">     
+                <div class="col-sm-12 col-md-7">
+                    <div class="box">
+                        <h1>Summary: Latitude vs. X</h1>
+
+                            <div class="fig">
+                            <img src="../Instructions/Resources/assets/images/Fig1.png" alt="City Latitude Vs. Max Temperature" width ="300px">
+                            </div>
+                    
+                        <p>
+                            The purpose of this project was to analyze how weather changes as you get closer to the equator.
+                            To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities.
+                            <br/><br/>
+                            After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude.
+                            Factors we looked at included: temperature, cloudiness, wind speed, and humidity.
+                            This site provides the source data and visualizations created as part of the analysis, as well as explanations and descriptions of any trends and correlations witnessed.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-md-5">
+                    <div class="box">
+                        <h2>Visualizations</h2>
+                    
+                        <img id="fig1" src="../Instructions/Resources/assets/images/Fig1.png" alt="City Latitude Vs. Max Temperature" width ="250px">
+                        <img id="fig2" src="../Instructions/Resources/assets/images/Fig2.png" alt="City Latitude Vs. Humidity Map" width ="250px">
+                        <img id="fig3" src="../Instructions/Resources/assets/images/Fig3.png" alt="City Latitude Vs. Cloudiness" width ="250px">
+                        <img id="fig4" src="../Instructions/Resources/assets/images/Fig4.png" alt="City Latitude Vs. Wind Speed" width ="250px">      
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="panel-footer">
+                    &copy Copyright Coding Bootcamp 2017
+                </div>
+            </div>
+            
+        </div>
+        </div>
+    </div>
+      
+</body>
+
+</html> 
